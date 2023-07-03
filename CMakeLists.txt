@@ -1,0 +1,33 @@
+cmake_minimum_required(VERSION 3.19)
+project(leetcode)
+
+set(CMAKE_CXX_STANDARD 14)
+#add_compile_options(/Zc:__cplusplus)
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c90 -pedantic")
+add_executable(leetcode main.cpp)
+
+add_executable(53-maximum-subarray leetcode/editor/en/53-maximum-subarray.cpp)
+add_executable(1143-longest-common-subsequence leetcode/editor/en/1143-longest-common-subsequence.cpp)
+add_executable(300-longest-increasing-subsequence leetcode/editor/en/300-longest-increasing-subsequence.cpp)
+add_executable(712-minimum-ascii-delete-sum-for-two-strings leetcode/editor/en/712-minimum-ascii-delete-sum-for-two-strings.cpp)
+
+add_executable(416-partition-equal-subset-sum leetcode/editor/en/416-partition-equal-subset-sum.cpp)
+add_executable(518-coin-change-ii leetcode/editor/en/518-coin-change-ii.cpp)
+add_executable(72-edit-distance leetcode/editor/en/72-edit-distance.cpp)
+add_executable(64-minimum-path-sum leetcode/editor/en/64-minimum-path-sum.cpp)
+add_executable(174-dungeon-game leetcode/editor/en/174-dungeon-game.cpp)
+add_executable(514-freedom-trail leetcode/editor/en/514-freedom-trail.cpp)
+target_compile_features(514-freedom-trail PUBLIC cxx_std_14)
+target_compile_options(514-freedom-trail PRIVATE /Zc:__cplusplus)
+
+
+add_executable(46-permutations leetcode/editor/en/46-permutations.cpp)
+add_executable(78-subsets leetcode/editor/en/78-subsets.cpp)
+add_executable(77-combinations leetcode/editor/en/77-combinations.cpp)
+add_executable(216-combination-sum-iii leetcode/editor/en/216-combination-sum-iii.cpp)
+add_executable(90-subsets-ii leetcode/editor/en/90-subsets-ii.cpp)
+add_executable(47-permutations-ii leetcode/editor/en/47-permutations-ii.cpp)
+add_executable(40-combination-sum-ii leetcode/editor/en/40-combination-sum-ii.cpp)
+add_executable(39-combination-sum leetcode/editor/en/39-combination-sum.cpp)
+add_executable(698-partition-to-k-equal-sum-subsets leetcode/editor/en/698-partition-to-k-equal-sum-subsets.cpp)
+add_executable(dp258 lanqiao/dp258.cpp)
